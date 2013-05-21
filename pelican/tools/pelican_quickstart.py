@@ -203,6 +203,11 @@ needed by Pelican.
             CONF['ssh_target_dir'] = ask('Where do you want to put your web site on that server?', str_compat, CONF['ssh_target_dir'])
         if ask('Do you want to upload your website using Dropbox?', answer=bool, default=False):
             CONF['dropbox_dir'] = ask('Where is your Dropbox directory?', str_compat, CONF['dropbox_dir'])
+        if ask('Do you want to upload your website using Amazon S3?', answer=bool, default=False):
+            CONF['s3._bucket'] = ask('What is the name of your S3 bucket?', str_compat, CONF['s3._bucket'])
+            CONF['s3_SecretKey'] = ask('What is your  Amazon Secret Key?', str_compat, CONF['s3_SecretKey'])
+            CONF['s3_key'] = ask('What is your Amazon key?', str_compat, CONF['s3_key'])
+
 
     try:
         os.makedirs(os.path.join(CONF['basedir'], 'content'))

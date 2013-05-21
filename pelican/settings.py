@@ -226,6 +226,6 @@ def configure_settings(settings):
             'setting (must be string or compiled pattern), falling '
             'back to the default')
         settings['FILENAME_METADATA'] = (
-                _DEFAULT_CONFIG['FILENAME_METADATA'])
+              _DEFAULT_CONFIG['FILENAME_METADATA'])
 
     return settings

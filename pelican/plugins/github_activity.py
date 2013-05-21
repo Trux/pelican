@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
 from __future__ import unicode_literals, print_function
 """
     Copyright (c) Marco Milanesi <kpanic@gnufunk.org>
@@ -20,7 +20,7 @@ from __future__ import unicode_literals, print_function
                 <h2>Github Activity</h2>
                 <ul>
 
-                {% for entry in github_activity %}
+                {% for entry in github_activity %}π
                     <li><b>{{ entry[0] }}</b><br /> {{ entry[1] }}</li>
                 {% endfor %}
                 </ul>
